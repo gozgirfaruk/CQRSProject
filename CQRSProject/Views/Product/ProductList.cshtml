@@ -1,0 +1,26 @@
+﻿@model List<GetProductQueryResult>
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <br /><br />
+    <div class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Kategori Adı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+       @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.ProductID</td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td><a href="#" class="btn btn-danger"></a>Sil</td>
+                <td><a href="#" class="btn btn-dark"></a>Güncelle</td>
+            </tr>
+        }
+    </div>
+</div>
