@@ -8,7 +8,18 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CqrsContext>();
 
 builder.Services.AddScoped<GetCategoryQueryHandler>();
+builder.Services.AddScoped<GetCategoryByIdQueryHandler>();
+builder.Services.AddScoped<CreateCategoryCommandHandler>();
+builder.Services.AddScoped<RemoveCategoryCommandHandler>();
+builder.Services.AddScoped<UpdateCategoryCommandHandler>();
+
+
 builder.Services.AddScoped<GetProductQueryHandler>();
+builder.Services.AddScoped<CreateProductCommandHandler>();
+builder.Services.AddScoped<DeleteProductCommandHandler>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
