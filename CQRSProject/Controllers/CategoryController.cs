@@ -57,6 +57,8 @@ namespace CQRSProject.Controllers
 
         public IActionResult DeleteCategory(int id)
         {
+            // parametre olarak command sınıfından command parametre geçilirse alttaki sutün kullanılabilir.
+            //_handleRemove.Handle(command);
             _handleRemove.Handle(new DeleteCategoryCommand(id));
             return RedirectToAction("CategoryList");
         }

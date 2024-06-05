@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CQRSProject.Migrations
 {
     [DbContext(typeof(CqrsContext))]
-    [Migration("20240601171119_CreatedTable")]
-    partial class CreatedTable
+    [Migration("20240604081817_DbFirstCreate")]
+    partial class DbFirstCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

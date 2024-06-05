@@ -6,7 +6,7 @@ namespace CQRSProject.DAL
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server =OFG\\SQLEXPRESS; Initial Catalog = CqrsDB; Integrated Security = true ");
+            optionsBuilder.UseSqlServer("Server =DESKTOP-P40Q2KE\\SQLEXPRESS; Initial Catalog = CqrsDB; Integrated Security = true ");
         }
 
         public DbSet<Product> Products { get; set; }

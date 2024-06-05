@@ -4,7 +4,7 @@
 
 namespace CQRSProject.Migrations
 {
-    public partial class CreatedTable : Migration
+    public partial class DbFirstCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

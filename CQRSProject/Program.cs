@@ -17,6 +17,7 @@ builder.Services.AddScoped<UpdateCategoryCommandHandler>();
 builder.Services.AddScoped<GetProductQueryHandler>();
 builder.Services.AddScoped<CreateProductCommandHandler>();
 builder.Services.AddScoped<DeleteProductCommandHandler>();
+builder.Services.AddScoped<GetProductByIdQueryHandler>();
 
 
 
