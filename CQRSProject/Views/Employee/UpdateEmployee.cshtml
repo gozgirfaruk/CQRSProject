@@ -1,0 +1,31 @@
+﻿@using CQRSProject.MediatorPattern.Commands
+@model UpdateEmployeeCommand
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Çalışan Bilgileri Güncelleme</h2>
+
+    <form method="post">
+        <label>ID :</label><br>
+        <input type="text" id="fname" asp-for="EmployeeID"><br>
+
+        <label>Adı :</label><br>
+        <input type="text" id="fname" asp-for="Name"><br>
+
+        <label>Soyadı :</label><br>
+        <input type="text" id="fname" asp-for="Surname"><br>
+
+        <label>Maaş :</label><br>
+        <input type="text" id="fname" asp-for="Salary"><br>
+
+        <input type="submit" value="Güncelle">
+    </form>
+
+
+</body>
+</html>

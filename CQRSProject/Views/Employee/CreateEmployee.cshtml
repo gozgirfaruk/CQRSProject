@@ -1,0 +1,31 @@
+﻿@using CQRSProject.MediatorPattern.Commands
+@model CreateEmployeeCommand
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Yeni Çalışan Ekleme</h2>
+
+    <form method="post">
+
+        <label >Adı :</label><br>
+        <input type="text" id="fname" asp-for="Name"><br>
+
+        <label>Soyadı :</label><br>
+        <input type="text" id="fname" asp-for="Surname"><br>
+
+        <label>Maaşı :</label><br>
+        <input  id="fname" asp-for="Salary"><br>
+
+        <input type="submit" value="Ekle">
+    </form>
+
+
+</body>
+</html>
+
+

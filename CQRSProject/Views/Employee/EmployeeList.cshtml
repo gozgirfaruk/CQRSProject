@@ -1,0 +1,56 @@
+﻿@using CQRSProject.MediatorPattern.Results
+@model List<GetEmployeeQueryResult>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Çalışan Listesi</h2>
+
+    <table>
+        <tr>
+            <th>#</th>
+            <th>İsim Soyisim</th>
+            <th>Maaşı</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EmployeeID</td>
+                <td>@item.Name  @item.Surname</td>
+                <td>@item.Salary $</td>
+                <td><a href="/Employee/RemoveEmployee/@item.EmployeeID" class="btn-danger">Sil</a></td>
+                <td><a href="/Employee/GetEmployee/@item.EmployeeID" class="btn-danger">Güncelle</a></td>
+            </tr>
+        }
+
+    </table>
+    <a href="/Employee/CreateEmployee" class="btn-danger">Yeni Çalışan Ekle</a>
+</body>
+</html>
+
+
+
+
